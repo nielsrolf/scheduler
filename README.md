@@ -17,6 +17,7 @@ training.execute()
 
 ## Install
 ```
+pip install git+https://github.com/nielsrolf/scheduler.git
 python setup.py install
 python setup.py develop
 ```

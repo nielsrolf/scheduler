@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/nielsrolf/scheduler/branch/master/graph/badge.svg)](https://codecov.io/gh/nielsrolf/scheduler)
+
 # Scheduler
 
 Write a training loop from logically separated steps!

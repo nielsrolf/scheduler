@@ -1,5 +1,6 @@
 [![codecov](https://codecov.io/gh/nielsrolf/scheduler/branch/master/graph/badge.svg)](https://codecov.io/gh/nielsrolf/scheduler)
 ![Test](https://github.com/nielsrolf/scheduler/workflows/Test/badge.svg)
+![Lint](https://github.com/nielsrolf/scheduler/workflows/Lint/badge.svg)
 
 # Scheduler
 

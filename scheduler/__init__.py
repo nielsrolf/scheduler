@@ -1,1 +1,1 @@
-from scheduler.schedule import Schedule # noqa
+from scheduler.schedule import Schedule  # noqa

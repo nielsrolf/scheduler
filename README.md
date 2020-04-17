@@ -6,7 +6,7 @@
 
 Write a training loop from logically separated steps!
 
-```
+```Python
 batch = Schedule().first().do(batch_info)
 batch.forNext(5).every(1).do(update_g)
 batch.then().do(update_d)
@@ -17,6 +17,19 @@ training.every(10).do(plot_training)
 training.forNext(20)
 training.then().do(training.withScope(learning_rate=0.1).forNext(20))
 training.execute()
+```
+
+Or finally be able to solve the fizzbuzz challenge:
+```Python
+Schedule().every(3).do(
+    lambda i, d: print('Fizz', end='')
+).every(5).do(
+    lambda i, d: print("Buzz", end='')
+).every(1).do(
+    lambda i, d: print(i+1, end='') if ((i+1)%3)*((i+1)%5) != 0 else None
+).every(1).do(
+    lambda i, d: print()
+).forNext(100).execute()
 ```
 
 ## Install
